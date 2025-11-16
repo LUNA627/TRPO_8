@@ -1,0 +1,80 @@
+﻿<Page x:Class="TRPO_8.Pages.MainDoctorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRPO_8.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainDoctorPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Label Content="Кабинет" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="22" Margin="10"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel>
+                <Label Content="Идентификатор" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Фамилия"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Имя"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Профессия" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBox Text="{Binding CurrentDoctor.IDDoctor}" Margin="5,5,15,5" HorizontalAlignment="Left" Width="250"/>
+                <TextBox Text="{Binding CurrentDoctor.NameDoctor}"  Margin="5,5,15,5" HorizontalAlignment="Left" Width="250"/>
+                <TextBox Text="{Binding CurrentDoctor.LastNameDoctor}"  Margin="5,5,15,5" HorizontalAlignment="Left" Width="250"/>
+                <TextBox Text="{Binding CurrentDoctor.MiddleNameDoctor}"  Margin="5,5,15,5" HorizontalAlignment="Left" Width="250"/>
+                <TextBox Text="{Binding CurrentDoctor.SpecialisationDoctor}"   Margin="5,5,15,5" HorizontalAlignment="Left" Width="250"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Создать пациента" Margin="5" Height="30" Width="110" Click="CreatNewPatint_Click"/>
+            <Button Content="Начать прием" Margin="5" Height="30" Width="110" Click="StartAppointment_Click"/>
+            <Button Content="Изменить информацию" Margin="5" Height="30" Width="150" Click="ChangeInfo_Click"/>
+        </StackPanel>
+
+        <ListView Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Patients}" SelectedItem="{Binding PatientSeleced}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="ID: "/>
+                            <TextBlock Text="{Binding IDPatient}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="ФИО: "/>
+                            <TextBlock Text="{Binding FullName}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Телефон: "/>
+                            <TextBlock Text="{Binding PhonePatient}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="День рождения: "/>
+                            <TextBlock Text="{Binding BirthdayPatient}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="История приёмов: "/>
+                            <TextBlock Text="{Binding AppointmentStories.Count}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</Page>

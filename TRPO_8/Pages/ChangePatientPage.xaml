@@ -1,0 +1,42 @@
+﻿<Page x:Class="TRPO_8.Pages.ChangePatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRPO_8.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChangePatientPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+
+        <!--Изменение пациента-->
+        <StackPanel HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <TextBlock Text="Изменение информации пациента" FontSize="19"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
+            <Label Content="Имя:"/>
+            <Label Content="Фамилия:"/>
+            <Label Content="Отчество:"/>
+            <Label Content="Дата рождения:"/>
+            <Label Content="Номер телефона:"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
+            <TextBox Margin="4" Text="{Binding Patient.NamePatient, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Margin="4" Text="{Binding Patient.LastNamePatient, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Margin="4" Text="{Binding Patient.MiddleNamePatient, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Margin="5" Text="{Binding Patient.BirthdayPatient, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Margin="5" Text="{Binding Patient.PhonePatient, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Width="80" Height="20" Content="Сохранить" HorizontalAlignment="Right" Margin="0 5 5 0" Click="Save_Click" />
+            <Button Width="80" Height="20" Content="Назад" HorizontalAlignment="Right" Margin="0 5 5 0" Click="GoBack_Click" />
+        </StackPanel>
+    </Grid>
+</Page>

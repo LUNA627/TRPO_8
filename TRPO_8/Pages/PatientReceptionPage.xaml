@@ -1,0 +1,87 @@
+﻿<Page x:Class="TRPO_8.Pages.PatientReceptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TRPO_8.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="PatientReceptionPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="5" Width="80" Height="20" Content="Назад" HorizontalAlignment="Right" Click="GoBackPatient_Click" />
+            <Button Content="Изменить информацию" Margin="5" Width="140" Height="20" Click="ChangePatient_Click"></Button>
+        </StackPanel>
+        <ListView Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Grid.Row="1" Grid.RowSpan="3" ItemsSource="{Binding Patient.AppointmentStories}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Последняя дата приема: "/>
+                            <TextBlock Text="{Binding Date}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Последний доктор: "/>
+                            <TextBlock Text="{Binding DoctorId}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Диагноз: "/>
+                            <TextBlock Text="{Binding Diagnosis}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Рекомендации: "/>
+                            <TextBlock Text="{Binding Recomendations}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Content="Текущая информация о пациенте: " FontSize="16" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
+            <Label Content="Имя:"/>
+            <Label Content="Фамилия:"/>
+            <Label Content="Отчество:"/>
+            <Label Content="Дата рождения:"/>
+            <Label Content="Телефон:"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" Grid.RowSpan="3">
+            <TextBlock Margin="5" Text="{Binding Patient.NamePatient}"/>
+            <TextBlock Margin="5" Text="{Binding Patient.LastNamePatient}"/>
+            <TextBlock Margin="5" Text="{Binding Patient.MiddleNamePatient}"/>
+            <TextBlock Margin="5" Text="{Binding Patient.BirthdayPatient}"/>
+            <TextBlock Margin="5" Text="{Binding Patient.PhonePatient}"/>
+        </StackPanel>
+
+        <Label Content="Прием пациента: " FontSize="16" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3">
+
+            <Label Content="Последний врач:"/>
+            <TextBox Margin="4" Text="{Binding CurrentDoctorId}"/>
+            <Label Content="Диагноз:"/>
+            <TextBox Margin="4" Text="{Binding CurrentAppointment.Diagnosis}"/>
+            <Label Content="Рекомендации:"/>
+            <TextBox Margin="5" Text="{Binding CurrentAppointment.Recomendations}"/>
+            <Button Width="80" Height="20" Content="Сохранить" HorizontalAlignment="Right" Margin="0 5 5 0" Click="SaveAppointment_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
