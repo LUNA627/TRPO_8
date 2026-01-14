@@ -107,6 +107,7 @@ namespace TRPO_8.Data
 
             string jsonFileWriter = JsonSerializer.Serialize(patient, options);
             File.WriteAllText(filePath, jsonFileWriter);
+
         }
 
 
@@ -171,17 +172,28 @@ namespace TRPO_8.Data
 
 
 
+        public void DeletePatient(int patientId)
+        {
+            string fileName = $"P_{patientId}.json";
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
+            File.Delete(filePath);
 
-        //public int CountFileDoctor()
-        //{
-        //    string[] filePath = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, $"D_*.json");
-        //    return filePath.Length;
-        //}
+        }
 
-        //public int CountFilePatient()
-        //{
-        //    string[] filePath = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "P_*.json");
-        //    return filePath.Length;
-        //}
+
+
+
+        public int CountFileDoctor()
+        {
+            string[] filePath = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, $"D_*.json");
+            return filePath.Length;
+        }
+
+        public int CountFilePatient()
+        {
+            string[] filePath = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "P_*.json");
+            return filePath.Length;
+        }
+
     }
 }

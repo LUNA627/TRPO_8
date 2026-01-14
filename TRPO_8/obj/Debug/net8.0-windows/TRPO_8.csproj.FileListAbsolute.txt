@@ -30,3 +30,138 @@ C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientRecept
 C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.baml
 C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.g.cs
 C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.sourcelink.json
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Button.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DarkTheme.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DefaultColors.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll.config
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Label.baml
+C:\Users\LUNA\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Margins.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.exe
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll.config
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.deps.json
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.runtimeconfig.json
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DarkTheme.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DefaultColors.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Button.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Label.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.cache
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.lref
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.g.resources
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfoInputs.cache
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfo.cs
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.CoreCompileInputs.cache
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.sourcelink.json
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\TextBox.baml
+C:\Users\LUNA\Desktop\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\StackPanel.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.exe
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll.config
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.deps.json
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.runtimeconfig.json
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DarkTheme.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DefaultColors.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Button.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Label.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\StackPanel.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\TextBox.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.cache
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.lref
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.baml
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.g.resources
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfoInputs.cache
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfo.cs
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.CoreCompileInputs.cache
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.sourcelink.json
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dll
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\st310-09\Desktop\TRPO__9-main\TRPO_8 (2)\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.exe
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll.config
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.deps.json
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.runtimeconfig.json
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DarkTheme.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\Colors\DefaultColors.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Button.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Label.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\StackPanel.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\TextBox.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.cache
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_MarkupCompile.lref
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\App.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\ChangePatientPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\CreateNewPatientPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\LoginPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\MainDoctorPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\PatientReceptionPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Pages\RegistrationPage.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.g.resources
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfoInputs.cache
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.AssemblyInfo.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.CoreCompileInputs.cache
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.sourcelink.json
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\DatePicker.baml
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Grid.baml

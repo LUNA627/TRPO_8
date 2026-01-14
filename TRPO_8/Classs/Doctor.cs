@@ -9,7 +9,7 @@ namespace TRPO_8.Classs
 {
     public class Doctor
     {
-        public int IDDoctor { get; set; } = 0;
+        public int IDDoctor { get; set; }
         public string NameDoctor { get; set; } = "";
         public string LastNameDoctor { get; set; } = "";
         public string MiddleNameDoctor { get; set; } = "";
@@ -17,6 +17,6 @@ namespace TRPO_8.Classs
         public string PasswordDoctor { get; set; } = "";
 
         [JsonIgnore]
-        public string RepeatDoctor { get; set; } = "";
+        public string RepeatPasswordDoctor { get; set; } = "";
     }
 }

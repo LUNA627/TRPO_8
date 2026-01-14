@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -11,7 +13,7 @@ namespace TRPO_8.Classs
 {
     public class Patient : INotifyPropertyChanged
     {
-        private int _iDPatient = 0;
+        private int _iDPatient;
         public int IDPatient
         {
             get => _iDPatient;
@@ -19,6 +21,7 @@ namespace TRPO_8.Classs
             {
                 _iDPatient = value;
                 OnPropertyChanged();
+
             }
         }
 
@@ -30,6 +33,7 @@ namespace TRPO_8.Classs
             {
                 _namePatient = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(FullName));
             }
         }
 
@@ -41,6 +45,7 @@ namespace TRPO_8.Classs
             {
                 _lastNamePatient = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(FullName));
             }
         }
 
@@ -53,12 +58,15 @@ namespace TRPO_8.Classs
             {
                 _middleNamePatient = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(FullName));
             }
         }
 
 
-        private string _birthdayPatient = "";
-        public string BirthdayPatient
+        private DateTime? _birthdayPatient;
+
+        [JsonIgnore]
+        public DateTime? BirthdayPatient
         {
             get => _birthdayPatient;
             set
@@ -68,6 +76,26 @@ namespace TRPO_8.Classs
             }
         }
 
+        [JsonPropertyName("Birthday")]
+        public string BirthdayJson
+        {
+            get => _birthdayPatient?.ToString("dd.MM.yyyy") ?? "";
+            set
+            {
+                if (DateTime.TryParseExact(value, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out var date))
+                {
+                    _birthdayPatient = date;
+                }
+                else 
+                {
+                    _birthdayPatient = null;
+                }
+                OnPropertyChanged(nameof(BirthdayPatient));
+            }
+        }
+
+
+
 
         private string _phonePatient = "";
         public string PhonePatient
@@ -75,14 +103,18 @@ namespace TRPO_8.Classs
             get => _phonePatient;
             set
             {
-                _phonePatient = value;
-                OnPropertyChanged();
+                _phonePatient = new string(value.Where(char.IsDigit).ToArray());
+                OnPropertyChanged();    
             }
         }
 
 
-        private List<Appointment> _appointmentStories = new();
-        public List<Appointment> AppointmentStories
+    
+
+
+
+        private ObservableCollection<Appointment> _appointmentStories = new();
+        public ObservableCollection<Appointment> AppointmentStories
         {
             get => _appointmentStories;
             set
@@ -92,8 +124,9 @@ namespace TRPO_8.Classs
             }
         }
 
-
+     
         public string FullName => $"{NamePatient} {LastNamePatient} {MiddleNamePatient}".Trim();
+
 
 
         public event PropertyChangedEventHandler? PropertyChanged;

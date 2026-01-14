@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TRPO_8.Pages;
+using TRPO_8.Styles.ClassStyle;
 
 namespace TRPO_8
 {
@@ -23,5 +24,9 @@ namespace TRPO_8
             MainFrame.Navigate(new LoginPage());
         }
 
+        private void ChangeTheme_Click(object sender, RoutedEventArgs e)
+        {
+            ThemeHelper.Toggle();
+        }
     }
 }

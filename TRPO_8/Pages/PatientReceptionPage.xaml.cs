@@ -48,11 +48,21 @@ namespace TRPO_8.Pages
 
         private void SaveAppointment_Click(object sender, RoutedEventArgs e)
         {
-            
-            Patient.AppointmentStories.Add(CurrentAppointment);
+            var newAppointment = new Appointment
+            {
+                Date = DateTime.Today.ToString("dd.MM.yyyy"),
+                DoctorId = CurrentDoctorId,
+                Diagnosis = CurrentAppointment.Diagnosis,
+                Recomendations = CurrentAppointment.Recomendations
+            };
+
+
+            Patient.AppointmentStories.Add(newAppointment);
 
             var _data = new DataWork();
             _data.SavePatientNoId(Patient);
+
+          
 
             MessageBox.Show("Приём сохранён!", "Успех");
         }

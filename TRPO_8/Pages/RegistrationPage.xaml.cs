@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using TRPO_8.Classs;
 using TRPO_8.Data;
 
+
 namespace TRPO_8.Pages
 {
     /// <summary>
@@ -27,7 +28,7 @@ namespace TRPO_8.Pages
         public string _MiddleName { get; set; } = "";
         public string _Specialisation { get; set; } = "";
         public string _Password { get; set; } = "";
-        public string _RepeatDoctor { get; set; } = "";
+        public string _RepeatPassword { get; set; } = "";
 
         public RegistrationPage()
         {
@@ -37,12 +38,47 @@ namespace TRPO_8.Pages
 
         private void SaveNewDoctor_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(_Name) ||
-               string.IsNullOrWhiteSpace(_LastName) ||
-               string.IsNullOrWhiteSpace(_MiddleName) ||
-               string.IsNullOrWhiteSpace(_Specialisation))
+
+
+
+            var bindingExpressions = new[]
             {
-                MessageBox.Show("Все поля обязательны для заполнения.");
+                LastNameTextBox.GetBindingExpression(TextBox.TextProperty),
+                NameTextBox.GetBindingExpression(TextBox.TextProperty),
+                MiddleNameTextBox.GetBindingExpression(TextBox.TextProperty),
+                SpecialisationTextBox.GetBindingExpression(TextBox.TextProperty),
+                PasswordTextBox.GetBindingExpression(TextBox.TextProperty),
+                RepeatPasswordTextBox.GetBindingExpression(TextBox.TextProperty)
+            };
+
+            foreach (var expr in bindingExpressions)
+            {
+                expr?.UpdateSource();
+            }
+
+            var textBoxes = new[]
+            {
+              LastNameTextBox,
+              NameTextBox,
+              MiddleNameTextBox,
+              SpecialisationTextBox,
+              PasswordTextBox,
+              RepeatPasswordTextBox,
+            };
+
+            foreach ( var textBox in textBoxes )
+            {
+                if (System.Windows.Controls.Validation.GetHasError(textBox))
+                {
+                    MessageBox.Show("Заполните поля корректно", "Ошибка");
+                    return;
+                }
+            }
+
+
+            if (_Password != _RepeatPassword)
+            {
+                MessageBox.Show("Пароли должны совпадать.", "Ошибка");
                 return;
             }
 
@@ -53,7 +89,7 @@ namespace TRPO_8.Pages
                 MiddleNameDoctor = _MiddleName,
                 SpecialisationDoctor = _Specialisation,
                 PasswordDoctor = _Password,
-                RepeatDoctor = _RepeatDoctor,
+                RepeatPasswordDoctor = _RepeatPassword,
             };
 
             try
@@ -61,6 +97,9 @@ namespace TRPO_8.Pages
                 var service = new DataWork();
                 service.SaveDoctor(doctor);
                 MessageBox.Show($"Доктор успешно зарегистрирован!\nID: {doctor.IDDoctor}", "Успех");
+                var _data = new DataWork();
+                _data.CountFileDoctor();
+
                 NavigationService.Navigate(new MainDoctorPage(doctor.IDDoctor));
 
             }
@@ -68,6 +107,11 @@ namespace TRPO_8.Pages
             {
                 MessageBox.Show($"Ошибка сохранения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

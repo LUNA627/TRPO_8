@@ -1,0 +1,269 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="Button" x:Key="ButtonStyle">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ButtonTextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="10"
+                        Padding="{TemplateBinding Padding}">
+                        <ContentPresenter
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonHover}"/>
+            </Trigger>
+
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonPressed}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" BasedOn="{StaticResource ButtonStyle}"/>
+
+    <Style TargetType="Button" x:Key="AddButtonStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#8c82fc"/>
+        <Setter Property="BorderBrush" Value="#b88bdf"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="+ Добавить"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#796ff1"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#6a5ef7"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="DeleteButtonStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#D73F3F"/>
+        <Setter Property="BorderBrush" Value="#A62F2F"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Удалить"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#C23838"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#A62F2F"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    
+    
+    <Style TargetType="Button" x:Key="LoginButtonEnterStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#c59ee6"/>
+        <Setter Property="BorderBrush" Value="#b88bdf"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="5,5,15,5"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="170"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Войти"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#b775f0"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#ab61ea"/>
+            </Trigger>
+
+        </Style.Triggers>
+    </Style>
+
+
+    <Style TargetType="Button" x:Key="LoginButtonRegStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Foreground" Value="#0078D4"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5,5,15,5"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="160"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Зарегистрироваться"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    
+    <Style TargetType="Button" x:Key="SaveButtonStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#70dbe1"/>
+        <Setter Property="BorderBrush" Value="#3ea7ac"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="5, 5, 20, 0"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="170"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Content" Value="Сохранить +"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#53dde4"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#24d2db"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style TargetType="Button" x:Key="BackButtonStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Foreground" Value="#0078D4"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5,5,15,10"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="160"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Назад"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+
+
+    <Style TargetType="Button" x:Key="LoginButtonStartReceivingStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Foreground" Value="#0078D4"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="130"/>
+        <Setter Property="Content" Value="Начать прием"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Начать прием"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style TargetType="Button" x:Key="LoginButtonСhangeInfoStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Foreground" Value="#0078D4"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="180"/>
+        <Setter Property="Content" Value="Изменить информацию"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Изменить информацию"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="LoginButtonСhangeInfoPageStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#da4ce1"/>
+        <Setter Property="BorderBrush" Value="#e248ea"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="190"/>
+        <Setter Property="Content" Value="Изменить информацию"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Изменить информацию"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#ef85f4"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#d656dc"/>
+            </Trigger>
+        </Style.Triggers>
+        
+    </Style>
+
+    <Style TargetType="Button" x:Key="BackСhangeInfoButtonStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Foreground" Value="#0078D4"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="110"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Назад"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+    <Style TargetType="Button" x:Key="SaveButtonChangeInfoStyle" BasedOn="{StaticResource ButtonStyle}">
+        <Setter Property="Background" Value="#70dbe1"/>
+        <Setter Property="BorderBrush" Value="#3ea7ac"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="0, 5, 20, 0"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Content" Value="Сохранить +"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#53dde4"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#24d2db"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

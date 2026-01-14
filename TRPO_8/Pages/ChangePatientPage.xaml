@@ -3,40 +3,146 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:validators="clr-namespace:TRPO_8.Validation"
       xmlns:local="clr-namespace:TRPO_8.Pages"
+      Background="{DynamicResource WindowBackground}"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="650" d:DesignWidth="1100"
       Title="ChangePatientPage">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="300"/>
-        </Grid.RowDefinitions>
+ 
+        <StackPanel Style="{DynamicResource StackPanelStyle}">
+            <Label Content="Изменение информации пациента" Style="{DynamicResource LabelStyleTitul}"/>
+        </StackPanel>
 
-        <!--Изменение пациента-->
-        <StackPanel HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
-            <TextBlock Text="Изменение информации пациента" FontSize="19"/>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
-            <Label Content="Имя:"/>
-            <Label Content="Фамилия:"/>
-            <Label Content="Отчество:"/>
-            <Label Content="Дата рождения:"/>
-            <Label Content="Номер телефона:"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
-            <TextBox Margin="4" Text="{Binding Patient.NamePatient, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Margin="4" Text="{Binding Patient.LastNamePatient, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Margin="4" Text="{Binding Patient.MiddleNamePatient, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Margin="5" Text="{Binding Patient.BirthdayPatient, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox Margin="5" Text="{Binding Patient.PhonePatient, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Width="80" Height="20" Content="Сохранить" HorizontalAlignment="Right" Margin="0 5 5 0" Click="Save_Click" />
-            <Button Width="80" Height="20" Content="Назад" HorizontalAlignment="Right" Margin="0 5 5 0" Click="GoBack_Click" />
-        </StackPanel>
+ 
+        <Grid Style="{DynamicResource GridStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="20"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+         
+            <Label Grid.Row="0" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Имя:" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="LastNameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+                <TextBox.Text>
+                    <Binding Path="Patient.LastNamePatient" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                            <validators:IsOnlyCharsRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+                ItemsSource="{Binding ElementName=LastNameTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+
+            <Label Grid.Row="2" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Фамилия:" />
+            <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+                <TextBox.Text>
+                    <Binding Path="Patient.NamePatient" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                            <validators:IsOnlyCharsRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl Grid.Row="3" Grid.Column="1" Foreground="Red" FontSize="12"
+                ItemsSource="{Binding ElementName=NameTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <Label Grid.Row="4" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Отчество:" />
+            <TextBox Grid.Row="4" Grid.Column="1" Name="MiddleNameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+                <TextBox.Text>
+                    <Binding Path="Patient.MiddleNamePatient" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                            <validators:IsOnlyCharsRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl Grid.Row="5" Grid.Column="1" Foreground="Red" FontSize="12"
+                ItemsSource="{Binding ElementName=MiddleNameTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <Label Grid.Row="6" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Дата рождения:" />
+            <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyle}">
+                <DatePicker.SelectedDate>
+                    <Binding Path="Patient.BirthdayPatient" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                            <validators:DateTimeRole/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </DatePicker.SelectedDate>
+            </DatePicker>
+            <ItemsControl Grid.Row="7" Grid.Column="1" Foreground="Red" FontSize="12"
+                ItemsSource="{Binding ElementName=BirthdayTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <Label Grid.Row="8" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Номер телефона:"/>
+            <TextBox Grid.Row="8" Grid.Column="1" Name="PhoneTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+                <TextBox.Text>
+                    <Binding Path="Patient.PhonePatient" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                            <validators:PhoneNumberRole/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl Grid.Row="9" Grid.Column="1" Foreground="Red" FontSize="12"
+                ItemsSource="{Binding ElementName=PhoneTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+
+            <StackPanel Grid.Row="10" Grid.Column="1" Style="{DynamicResource StackPanelOrientationHorizontalRight}">
+                <Button Style="{DynamicResource SaveButtonStyle}" Click="Save_Click"/>
+                <Button Style="{DynamicResource BackButtonStyle}" Click="GoBack_Click"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

@@ -4,25 +4,26 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TRPO_8.Pages"
+      Background="{DynamicResource WindowBackground}"
       mc:Ignorable="d" 
-      d:DesignHeight="650" d:DesignWidth="800"
+      d:DesignHeight="850" d:DesignWidth="1000"
       Title="PatientReceptionPage">
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="300"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="270"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="150"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
-            <Button Margin="5" Width="80" Height="20" Content="Назад" HorizontalAlignment="Right" Click="GoBackPatient_Click" />
-            <Button Content="Изменить информацию" Margin="5" Width="140" Height="20" Click="ChangePatient_Click"></Button>
+        <StackPanel Style="{DynamicResource StackPanelOrientationHorizontal}">
+            <Button Style="{DynamicResource BackСhangeInfoButtonStyle}" Click="GoBackPatient_Click" />
+            <Button Style="{DynamicResource LoginButtonСhangeInfoPageStyle}" Click="ChangePatient_Click"/>
         </StackPanel>
         <ListView Grid.Row="1">
             <ListView.ItemTemplate>
@@ -56,32 +57,32 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Label Content="Текущая информация о пациенте: " FontSize="16" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Label Style="{DynamicResource LabelStyle}" Content="Текущая информация о пациенте: " Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
-            <Label Content="Имя:"/>
-            <Label Content="Фамилия:"/>
-            <Label Content="Отчество:"/>
-            <Label Content="Дата рождения:"/>
-            <Label Content="Телефон:"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Имя:"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Фамилия:"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Отчество:"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Дата рождения:"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Телефон:"/>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="1" Grid.RowSpan="3">
-            <TextBlock Margin="5" Text="{Binding Patient.NamePatient}"/>
-            <TextBlock Margin="5" Text="{Binding Patient.LastNamePatient}"/>
-            <TextBlock Margin="5" Text="{Binding Patient.MiddleNamePatient}"/>
-            <TextBlock Margin="5" Text="{Binding Patient.BirthdayPatient}"/>
-            <TextBlock Margin="5" Text="{Binding Patient.PhonePatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.NamePatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.LastNamePatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.MiddleNamePatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.BirthdayPatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.PhonePatient}"/>
         </StackPanel>
 
-        <Label Content="Прием пациента: " FontSize="16" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Label Style="{DynamicResource LabelStyleLoySize}" Content="Прием пациента: " Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3">
 
-            <Label Content="Последний врач:"/>
-            <TextBox Margin="4" Text="{Binding CurrentDoctorId}"/>
-            <Label Content="Диагноз:"/>
-            <TextBox Margin="4" Text="{Binding CurrentAppointment.Diagnosis}"/>
-            <Label Content="Рекомендации:"/>
-            <TextBox Margin="5" Text="{Binding CurrentAppointment.Recomendations}"/>
-            <Button Width="80" Height="20" Content="Сохранить" HorizontalAlignment="Right" Margin="0 5 5 0" Click="SaveAppointment_Click"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Последний врач:"/>
+            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentDoctorId}" IsReadOnly="True"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Диагноз:"/>
+            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentAppointment.Diagnosis}"/>
+            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Рекомендации:"/>
+            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentAppointment.Recomendations}"/>
+            <Button Style="{DynamicResource SaveButtonChangeInfoStyle}" Click="SaveAppointment_Click"/>
         </StackPanel>
     </Grid>
 </Page>

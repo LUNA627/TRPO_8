@@ -12,17 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 using TRPO_8.Classs;
 using TRPO_8.Data;
 
 namespace TRPO_8.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для ChangePatientPage.xaml
-    /// </summary>
+ 
     public partial class ChangePatientPage : Page
     {
-        public Patient _originalPatient;
         public Patient Patient { get; set; }
 
 
@@ -30,37 +28,55 @@ namespace TRPO_8.Pages
         public ChangePatientPage(Patient patient)
         {
             InitializeComponent();
-            _originalPatient = patient;
 
-            Patient = new Patient
-            {
-                IDPatient = patient.IDPatient,
-                NamePatient = patient.NamePatient,
-                LastNamePatient = patient.LastNamePatient,
-                MiddleNamePatient = patient.MiddleNamePatient,
-                BirthdayPatient = patient.BirthdayPatient,
-                PhonePatient = patient.PhonePatient,
-                AppointmentStories = new List<Appointment>(patient.AppointmentStories)
-            };
+            Patient = patient;
             DataContext = this;
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            _originalPatient.NamePatient = Patient.NamePatient;
-            _originalPatient.LastNamePatient = Patient.LastNamePatient;
-            _originalPatient.MiddleNamePatient = Patient.MiddleNamePatient;
-            _originalPatient.BirthdayPatient = Patient.BirthdayPatient;
-            _originalPatient.PhonePatient = Patient.PhonePatient;
-             
-            var _data = new DataWork();
-            _data.SavePatientNoId(_originalPatient);
-            MessageBox.Show("Данные пациента обновлены!", "Успех");
+
+            var bindingExpressions = new[]
+            {
+        NameTextBox.GetBindingExpression(TextBox.TextProperty),
+        LastNameTextBox.GetBindingExpression(TextBox.TextProperty),
+        MiddleNameTextBox.GetBindingExpression(TextBox.TextProperty),
+        BirthdayTextBox.GetBindingExpression(DatePicker.SelectedDateProperty),
+        PhoneTextBox.GetBindingExpression(TextBox.TextProperty)
+    };
+
+            foreach (var expr in bindingExpressions)
+                expr?.UpdateSource();
+
+            // Проверяем ошибки
+            var controls = new Control[]
+            {
+        NameTextBox,
+        LastNameTextBox,
+        MiddleNameTextBox,
+        PhoneTextBox,
+        BirthdayTextBox
+            };
+
+            if (controls.Any(c => System.Windows.Controls.Validation.GetHasError(c)))
+            {
+                MessageBox.Show("Исправьте ошибки", "Ошибка");
+                return;
+            }
+
+ 
+            var service = new DataWork();
+            service.SavePatientNoId(Patient); 
+
+            MessageBox.Show("Данные обновлены!");
+            NavigationService.GoBack();
         }
 
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
         }
+
+      
     }
 }

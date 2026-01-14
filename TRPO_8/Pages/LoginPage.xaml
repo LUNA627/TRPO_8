@@ -4,31 +4,72 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TRPO_8.Pages"
+      xmlns:validators="clr-namespace:TRPO_8.Validation"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="650"
+      Background="{DynamicResource WindowBackground}"
+      d:DesignHeight="650" d:DesignWidth="1000"
       Title="LoginPage">
 
-    <DockPanel LastChildFill="False">
-
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
-            <Label Content="Вход" FontSize="22"/>
+    <Grid>
+        <StackPanel Style="{DynamicResource StackPanelStyle}">
+            <Label Style="{DynamicResource LabelStyleTitul}" Content="Вход"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Style="{DynamicResource StackPanelOrientationHorizontal}">
             <StackPanel>
-                <Label Content="Идентификатор" FontSize="18"/>
-                <Label Content="Пароль" FontSize="18"/>
+                <Label Style="{DynamicResource LabelStyle}" Content="Идентификатор"/>
+                <Label Style="{DynamicResource LabelStyle}" Content="Пароль"/>
             </StackPanel>
 
             <StackPanel>
-                <TextBox Text="{Binding DoctorId, UpdateSourceTrigger=PropertyChanged}"  Margin="5,5,15,5" HorizontalAlignment="Left" Width="350" Height="30"/>
-                <TextBox Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,15,5"  HorizontalAlignment="Left" Width="350" Height="30"/>
+                <TextBox Name="IdTextBox" Style="{DynamicResource TextBoxStyle}" MaxLength="5">
+                    <TextBox.Text>
+                        <Binding Path="DoctorId" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:IsEmptyRule/>
+                                <validators:IsOnlyNumRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=IdTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
 
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="Войти" VerticalAlignment="Top" HorizontalAlignment="Right" Height="50" Width="110"  Margin="5,5,15,5" Click="LoginDoctor_Click"/>
-                    <Button Content="Зарегистрироваться" VerticalAlignment="Top" HorizontalAlignment="Right" Height="50" Width="140" Margin="5,5,15,5" Click="RegistrationDoctor_Click"/>
+                
+                <TextBox Name="PasswordTextBox" Style="{DynamicResource TextBoxStyle}">
+                    <TextBox.Text>
+                        <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:IsEmptyRule/>
+                                <validators:CountSimvolRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+              FontSize="12" 
+              ItemsSource="{Binding ElementName=PasswordTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+
+
+                <StackPanel Style="{DynamicResource StackPanelOrientationHorizontalRight}">
+                    <Button Style="{DynamicResource LoginButtonEnterStyle}" Click="LoginDoctor_Click"/>
+                    <Button Style="{DynamicResource LoginButtonRegStyle}" Click="RegistrationDoctor_Click"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-    </DockPanel>
+    </Grid>
 </Page>
