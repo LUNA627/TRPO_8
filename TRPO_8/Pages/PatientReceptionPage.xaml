@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TRPO_8.Pages"
+      xmlns:validators="clr-namespace:TRPO_8.Validation"
       Background="{DynamicResource WindowBackground}"
       mc:Ignorable="d" 
       d:DesignHeight="850" d:DesignWidth="1000"
@@ -69,7 +70,7 @@
             <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.NamePatient}"/>
             <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.LastNamePatient}"/>
             <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.MiddleNamePatient}"/>
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.BirthdayPatient}"/>
+            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.BirthdayPatient, StringFormat={}{0:dd.MM.yyyy}}"/>
             <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.PhonePatient}"/>
         </StackPanel>
 
@@ -79,9 +80,42 @@
             <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Последний врач:"/>
             <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentDoctorId}" IsReadOnly="True"/>
             <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Диагноз:"/>
-            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentAppointment.Diagnosis}"/>
+
+            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Name="DiagnosisTextBox">
+                <TextBox.Text>
+                    <Binding Path="CurrentAppointment.Diagnosis" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:IsEmptyRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+               ItemsSource="{Binding ElementName=DiagnosisTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
             <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Рекомендации:"/>
-            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentAppointment.Recomendations}"/>
+            <TextBox  Name="RecomendationsTextBox" Style="{DynamicResource TextBoxStyleEnter}">
+                <Binding Path="CurrentAppointment.Recomendations" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validators:IsEmptyRule/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox>
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+                   ItemsSource="{Binding ElementName=DiagnosisTextBox, Path=(Validation.Errors)}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ErrorContent}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
             <Button Style="{DynamicResource SaveButtonChangeInfoStyle}" Click="SaveAppointment_Click"/>
         </StackPanel>
     </Grid>

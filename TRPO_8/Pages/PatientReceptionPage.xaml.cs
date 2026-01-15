@@ -48,6 +48,32 @@ namespace TRPO_8.Pages
 
         private void SaveAppointment_Click(object sender, RoutedEventArgs e)
         {
+            var bindingExpressions = new[]
+            {
+                DiagnosisTextBox.GetBindingExpression(TextBox.TextProperty),
+                RecomendationsTextBox.GetBindingExpression(TextBox.TextProperty)
+            };
+
+            foreach (var expr in bindingExpressions)
+            {
+                expr?.UpdateSource();
+            }
+
+            var textBoxes = new[]
+            {
+              DiagnosisTextBox,
+              RecomendationsTextBox
+            };
+
+            foreach (var textBox in textBoxes)
+            {
+                if (System.Windows.Controls.Validation.GetHasError(textBox))
+                {
+                    MessageBox.Show("Заполните поля корректно", "Ошибка");
+                    return;
+                }
+            }
+
             var newAppointment = new Appointment
             {
                 Date = DateTime.Today.ToString("dd.MM.yyyy"),

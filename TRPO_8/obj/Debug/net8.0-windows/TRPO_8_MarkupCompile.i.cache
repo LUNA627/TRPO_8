@@ -1,5 +1,5 @@
 ﻿TRPO_8
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\App.xaml
 15-967236578
 
-24-2032652074
+261613735367
 198-605490166
 MainWindow.xaml;Pages\ChangePatientPage.xaml;Pages\CreateNewPatientPage.xaml;Pages\LoginPage.xaml;Pages\MainDoctorPage.xaml;Pages\PatientReceptionPage.xaml;Pages\RegistrationPage.xaml;Styles\Colors\DarkTheme.xaml;Styles\Colors\DefaultColors.xaml;Styles\UI\Button.xaml;Styles\UI\DatePicker.xaml;Styles\UI\Grid.xaml;Styles\UI\Label.xaml;Styles\UI\StackPanel.xaml;Styles\UI\TextBox.xaml;
 
-False
+True
 
