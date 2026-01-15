@@ -102,7 +102,7 @@
 
             <!-- День рождения -->
             <Label Grid.Row="6" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="День рождения" />
-            <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyle}" SelectedDate="{Binding BirthdayPatient}">
+            <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyleLoy}" SelectedDate="{Binding BirthdayPatient}">
                 <DatePicker.Text>
                     <Binding Path="BirthdayPatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>

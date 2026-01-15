@@ -209,3 +209,9 @@ C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\refint\TRPO_8.dl
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.pdb
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.genruntimeconfig.cache
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\ref\TRPO_8.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.AssemblyReference.cache
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_Content.g.cs
+C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.Up2Date

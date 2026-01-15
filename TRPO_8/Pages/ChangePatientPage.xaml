@@ -99,7 +99,7 @@
             </ItemsControl>
 
             <Label Grid.Row="6" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Дата рождения:" />
-            <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyle}">
+            <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyleLong}">
                 <DatePicker.SelectedDate>
                     <Binding Path="Patient.BirthdayPatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
