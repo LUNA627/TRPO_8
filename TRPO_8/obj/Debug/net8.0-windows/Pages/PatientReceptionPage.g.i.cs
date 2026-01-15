@@ -70,7 +70,7 @@ namespace TRPO_8.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TRPO_8;component/pages/patientreceptionpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TRPO_8;V1.0.0.0;component/pages/patientreceptionpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\PatientReceptionPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
