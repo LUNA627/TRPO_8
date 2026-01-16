@@ -73,7 +73,7 @@
                             <TextBlock Text="{Binding BirthdayPatient, StringFormat={}{0:dd.MM.yyyy}}"/>
                         </StackPanel>
                         <StackPanel Style="{DynamicResource StackPanelOrientationHorizontalList}">
-                            <TextBlock Text="Возраст: "/>
+                            <TextBlock Text="Возраст (год.): "/>
                             <TextBlock Text="{Binding BirthdayPatient, Converter={StaticResource AgeConverter}}"/>
                         </StackPanel>
                         <StackPanel Style="{DynamicResource StackPanelOrientationHorizontalList}">

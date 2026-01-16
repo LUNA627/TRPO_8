@@ -128,6 +128,7 @@
                     <Binding Path="PhonePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <validators:IsEmptyRule/>
+                            <validators:PhoneNumberRole/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>

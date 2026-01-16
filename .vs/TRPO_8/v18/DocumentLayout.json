@@ -1,45 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\",
+  "WorkspaceRootPath": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\validation\\phonenumberrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\validation\\phonenumberrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\patientreceptionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\patientreceptionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\changepatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\changepatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\changepatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\styles\\ui\\datepicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\datepicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\styles\\ui\\textbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\textbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\createnewpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\createnewpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\createnewpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\classs\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\classs\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\maindoctorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\maindoctorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\maindoctorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\pages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\createnewpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\createnewpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\patientreceptionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\patientreceptionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\styles\\ui\\datepicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\datepicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\styles\\ui\\textbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\styles\\ui\\textbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\pages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\pages\\registrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna\\desktop\\trpo_10\\trpo_8\\trpo_8\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|c:\\users\\luna0_0\\desktop\\\u0442\u0440\u043F\u043E\\\u0442\u0440\u043F\u043E_10\\trpo_8\\trpo_8\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7067F0C6-BE0F-4C0E-9476-BC4780E10311}|TRPO_8\\TRPO_8.csproj|solutionrelative:trpo_8\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,36 +74,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\App.xaml.cs",
-              "RelativeDocumentMoniker": "TRPO_8\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\App.xaml.cs",
-              "RelativeToolTip": "TRPO_8\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Classs\\Patient.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Classs\\Patient.cs",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Classs\\Patient.cs",
+              "RelativeToolTip": "TRPO_8\\Classs\\Patient.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwIUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T16:38:04.12Z",
+              "WhenOpened": "2026-01-16T19:11:47.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-15T16:29:20.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateNewPatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\CreateNewPatientPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\CreateNewPatientPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-15T16:28:02.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\App.xaml",
-              "RelativeDocumentMoniker": "TRPO_8\\App.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\App.xaml",
-              "RelativeToolTip": "TRPO_8\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T16:37:51.403Z",
+              "Title": "PhoneNumberRole.cs",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Validation\\PhoneNumberRole.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Validation\\PhoneNumberRole.cs",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Validation\\PhoneNumberRole.cs",
+              "RelativeToolTip": "TRPO_8\\Validation\\PhoneNumberRole.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T19:18:57.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "RegistrationPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\RegistrationPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\RegistrationPage.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\RegistrationPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\RegistrationPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\RegistrationPage.xaml",
               "RelativeToolTip": "TRPO_8\\Pages\\RegistrationPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-15T16:29:30.269Z",
@@ -100,22 +137,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PatientReceptionPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\PatientReceptionPage.xaml",
-              "RelativeDocumentMoniker": "TRPO_8\\Pages\\PatientReceptionPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\PatientReceptionPage.xaml",
-              "RelativeToolTip": "TRPO_8\\Pages\\PatientReceptionPage.xaml",
+              "Title": "ChangePatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\ChangePatientPage.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\ChangePatientPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\ChangePatientPage.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\ChangePatientPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T16:29:25.578Z",
+              "WhenOpened": "2026-01-15T16:05:54.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MainDoctorPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\MainDoctorPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\MainDoctorPage.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Pages\\MainDoctorPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\MainDoctorPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\MainDoctorPage.xaml",
               "RelativeToolTip": "TRPO_8\\Pages\\MainDoctorPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-15T16:29:22.933Z",
@@ -123,35 +160,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "TRPO_8\\Pages\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\LoginPage.xaml",
-              "RelativeToolTip": "TRPO_8\\Pages\\LoginPage.xaml",
+              "DocumentIndex": 7,
+              "Title": "PatientReceptionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\PatientReceptionPage.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\PatientReceptionPage.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\PatientReceptionPage.xaml",
+              "RelativeToolTip": "TRPO_8\\Pages\\PatientReceptionPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T16:29:20.932Z",
+              "WhenOpened": "2026-01-15T16:29:25.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CreateNewPatientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml",
-              "RelativeDocumentMoniker": "TRPO_8\\Pages\\CreateNewPatientPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml",
-              "RelativeToolTip": "TRPO_8\\Pages\\CreateNewPatientPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T16:28:02.138Z",
+              "Title": "CreateNewPatientPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\Pages\\CreateNewPatientPage.xaml.cs",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Pages\\CreateNewPatientPage.xaml.cs",
+              "RelativeToolTip": "TRPO_8\\Pages\\CreateNewPatientPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADgv1cAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T19:15:42.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\App.xaml",
+              "RelativeDocumentMoniker": "TRPO_8\\App.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\App.xaml",
+              "RelativeToolTip": "TRPO_8\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-15T16:37:51.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\App.xaml.cs",
+              "RelativeDocumentMoniker": "TRPO_8\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\App.xaml.cs",
+              "RelativeToolTip": "TRPO_8\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T16:38:04.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "TextBox.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Styles\\UI\\TextBox.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Styles\\UI\\TextBox.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Styles\\UI\\TextBox.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Styles\\UI\\TextBox.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Styles\\UI\\TextBox.xaml",
               "RelativeToolTip": "TRPO_8\\Styles\\UI\\TextBox.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-15T16:19:35.478Z",
@@ -159,26 +222,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "DatePicker.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Styles\\UI\\DatePicker.xaml",
+              "DocumentMoniker": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Styles\\UI\\DatePicker.xaml",
               "RelativeDocumentMoniker": "TRPO_8\\Styles\\UI\\DatePicker.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Styles\\UI\\DatePicker.xaml",
+              "ToolTip": "C:\\Users\\LUNA0_0\\Desktop\\\u0422\u0420\u041F\u041E\\\u0422\u0420\u041F\u041E_10\\TRPO_8\\TRPO_8\\Styles\\UI\\DatePicker.xaml",
               "RelativeToolTip": "TRPO_8\\Styles\\UI\\DatePicker.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-15T16:19:33.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChangePatientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\ChangePatientPage.xaml",
-              "RelativeDocumentMoniker": "TRPO_8\\Pages\\ChangePatientPage.xaml",
-              "ToolTip": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\Pages\\ChangePatientPage.xaml",
-              "RelativeToolTip": "TRPO_8\\Pages\\ChangePatientPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T16:05:54.935Z",
               "EditorCaption": ""
             }
           ]

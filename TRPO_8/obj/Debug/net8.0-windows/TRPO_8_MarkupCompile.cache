@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\
+C:\Users\LUNA0_0\Desktop\ТРПО\ТРПО_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\
 TRPO_8
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\App.xaml
+C:\Users\LUNA0_0\Desktop\ТРПО\ТРПО_10\TRPO_8\TRPO_8\App.xaml
 15-967236578
-22-1667533514
+22-113031925
 24-2032652074
-201-1045836750
+201-278357816
 MainWindow.xaml;Pages\ChangePatientPage.xaml;Pages\CreateNewPatientPage.xaml;Pages\LoginPage.xaml;Pages\MainDoctorPage.xaml;Pages\PatientReceptionPage.xaml;Pages\RegistrationPage.xaml;Styles\Colors\DarkTheme.xaml;Styles\Colors\DefaultColors.xaml;Styles\UI\Button.xaml;Styles\UI\DatePicker.xaml;Styles\UI\Grid.xaml;Styles\UI\Label.xaml;Styles\UI\StackPanel.xaml;Styles\UI\TextBox.xaml;
 
 False

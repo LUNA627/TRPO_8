@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj": {}
+    "C:\\Users\\LUNA0_0\\Desktop\\ТРПО\\ТРПО_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj": {
+    "C:\\Users\\LUNA0_0\\Desktop\\ТРПО\\ТРПО_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj",
+        "projectUniqueName": "C:\\Users\\LUNA0_0\\Desktop\\ТРПО\\ТРПО_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj",
         "projectName": "TRPO_8",
-        "projectPath": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj",
-        "packagesPath": "C:\\Users\\LUNA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUNA\\Desktop\\TRPO_10\\TRPO_8\\TRPO_8\\obj\\",
+        "projectPath": "C:\\Users\\LUNA0_0\\Desktop\\ТРПО\\ТРПО_10\\TRPO_8\\TRPO_8\\TRPO_8.csproj",
+        "packagesPath": "C:\\Users\\LUNA0_0\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LUNA0_0\\Desktop\\ТРПО\\ТРПО_10\\TRPO_8\\TRPO_8\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LUNA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LUNA0_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -66,6 +66,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

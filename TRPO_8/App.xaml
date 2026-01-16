@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:TRPO_8"
              xmlns:converters="clr-namespace:TRPO_8.Convertes"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -15,12 +14,7 @@
                 <ResourceDictionary Source="/Styles/UI/StackPanel.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/Grid.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/DatePicker.xaml"/>
-
-                <materialDesign:BundledTheme 
-                    BaseTheme="Light"
-                    PrimaryColor="DeepPurple"                     SecondaryColor="Lime" />
-                <ResourceDictionary
-                Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+                
             </ResourceDictionary.MergedDictionaries>
 
             <converters:AgeConverter x:Key="AgeConverter"/>
