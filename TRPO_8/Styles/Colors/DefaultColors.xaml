@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <SolidColorBrush x:Key="WindowBackground" Color="White"/>
+    <!--<SolidColorBrush x:Key="WindowBackground" Color="White"/>
     <SolidColorBrush x:Key="TextForeground" Color="Black"/>
     <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
     <SolidColorBrush x:Key="ButtonTextForeground" Color="White"/>
@@ -13,5 +13,39 @@
     <SolidColorBrush x:Key="TextBoxForeground" Color="#005A9E"/>
 
     <SolidColorBrush x:Key="DatePickerBackground" Color="White"/>
-    <SolidColorBrush x:Key="DatePickerForeground" Color="#005A9E"/>
+    <SolidColorBrush x:Key="DatePickerForeground" Color="#005A9E"/>-->
+
+
+
+    <!-- Фон окна -->
+    <SolidColorBrush x:Key="MaterialDesignBackground" Color="#F5FAFB"/>
+
+    <!-- Карточки и панели -->
+    <SolidColorBrush x:Key="MaterialDesignCardBackground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="MaterialDesignPaper" Color="#FFFFFF"/>
+
+    <!-- Текст -->
+    <SolidColorBrush x:Key="MaterialDesignHeadline" Color="#2E3B4E"/>
+    <SolidColorBrush x:Key="MaterialDesignBody" Color="#444B54"/>
+    <SolidColorBrush x:Key="MaterialDesignHintText" Color="#6E7A89"/>
+    <SolidColorBrush x:Key="MaterialDesignSecondaryText" Color="#6E7A89"/>
+
+    <!-- Кнопки -->
+    <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#33B8B1"/>
+    <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="#E65A4F"/>
+
+    <!-- Поля ввода -->
+    <SolidColorBrush x:Key="MaterialDesignTextFieldBoxBackground" Color="#F0F6F8"/>
+    <SolidColorBrush x:Key="MaterialDesignDivider" Color="#6E7A89"/>
+
+    <!-- Ошибки валидации -->
+    <SolidColorBrush x:Key="ValidationErrorBackground" Color="#FFE8E8"/>
+    <SolidColorBrush x:Key="ValidationErrorBorder" Color="#D93025"/>
+    <SolidColorBrush x:Key="ValidationErrorForeground" Color="#D93025"/>
+
+    <!-- Акцент -->
+    <SolidColorBrush x:Key="AccentColor" Color="#3A9AD9"/>
+
+
+    <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#4CCAD4"/>
 </ResourceDictionary>

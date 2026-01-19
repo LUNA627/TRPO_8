@@ -5,7 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TRPO_8.Pages"
       xmlns:validators="clr-namespace:TRPO_8.Validation"
-      Background="{DynamicResource WindowBackground}"
+      xmlns:classs="clr-namespace:TRPO_8.Classs"
+      xmlns:converters="clr-namespace:TRPO_8.Convertes"
+      d:DataContext="{d:DesignInstance Type=classs:Patient}"
+      Background="{DynamicResource MaterialDesignBackground}"
       mc:Ignorable="d" 
       d:DesignHeight="850" d:DesignWidth="1000"
       Title="PatientReceptionPage">
@@ -13,7 +16,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="370"/>
             <ColumnDefinition Width="270"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -23,8 +26,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Style="{DynamicResource StackPanelOrientationHorizontal}">
-            <Button Style="{DynamicResource BackСhangeInfoButtonStyle}" Click="GoBackPatient_Click" />
-            <Button Style="{DynamicResource LoginButtonСhangeInfoPageStyle}" Click="ChangePatient_Click"/>
+            <Button Style="{StaticResource ButtonStyle}" Content="Назад" Click="GoBackPatient_Click" />
+            <Button Style="{StaticResource ButtonStyle}" Content="Изменить" Click="ChangePatient_Click"/>
         </StackPanel>
         <ListView Grid.Row="1">
             <ListView.ItemTemplate>
@@ -37,10 +40,6 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Последняя дата приема: "/>
-                            <TextBlock Text="{Binding Date}"/>
-                        </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Последний доктор: "/>
                             <TextBlock Text="{Binding DoctorId}"/>
@@ -58,30 +57,32 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Label Style="{DynamicResource LabelStyle}" Content="Текущая информация о пациенте: " Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Label Style="{StaticResource LabelStyleTitul}" Content="Текущая информация о пациенте: " Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"/>
         <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Имя:"/>
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Фамилия:"/>
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Отчество:"/>
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Дата рождения:"/>
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Телефон:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Имя:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Фамилия:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Отчество:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Дата рождения:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Телефон:"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Последний прим:"/>
+
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="1" Grid.RowSpan="3">
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.NamePatient}"/>
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.LastNamePatient}"/>
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.MiddleNamePatient}"/>
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.BirthdayPatient, StringFormat={}{0:dd.MM.yyyy}}"/>
-            <TextBox Style="{DynamicResource TextBoxStyleLoyLoySize}" Text="{Binding Patient.PhonePatient}"/>
+            <TextBox Style="{StaticResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.NamePatient}"/>
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.LastNamePatient}"/>
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.MiddleNamePatient}"/>
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.BirthdayPatient, StringFormat={}{0:dd.MM.yyyy}}"/>
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.PhonePatient}"/>
+            <TextBlock Style="{StaticResource TextBlockStyleReceptionPage}" Text="{Binding Patient.AppointmentStories, Converter={StaticResource DayAppointmentConverter}}"/>
+
         </StackPanel>
 
-        <Label Style="{DynamicResource LabelStyleLoySize}" Content="Прием пациента: " Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3"/>
-        <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3">
+        <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="0, 40,0,0">
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Последний врач:"/>
+            <TextBox Style="{StaticResource RoundedTextBoxStyleReceptionPageP}" Text="{Binding CurrentDoctorId}" IsReadOnly="True"/>
+            <Label Style="{StaticResource LabelStyleReceptionPage}" Content="Диагноз:"/>
 
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Последний врач:"/>
-            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Text="{Binding CurrentDoctorId}" IsReadOnly="True"/>
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Диагноз:"/>
-
-            <TextBox Style="{DynamicResource TextBoxStyleEnter}" Name="DiagnosisTextBox">
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPageP}" Name="DiagnosisTextBox">
                 <TextBox.Text>
                     <Binding Path="CurrentAppointment.Diagnosis" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -99,8 +100,8 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            <Label Style="{DynamicResource LabelStyleLoyLoySize}" Content="Рекомендации:"/>
-            <TextBox  Name="RecomendationsTextBox" Style="{DynamicResource TextBoxStyleEnter}">
+            <Label Style="{DynamicResource LabelStyleReceptionPage}" Content="Рекомендации:"/>
+            <TextBox  Name="RecomendationsTextBox" Style="{DynamicResource RoundedTextBoxStyleReceptionPageP}">
                 <Binding Path="CurrentAppointment.Recomendations" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <validators:IsEmptyRule/>
@@ -116,7 +117,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
             
-            <Button Style="{DynamicResource SaveButtonChangeInfoStyle}" Click="SaveAppointment_Click"/>
+            <Button Style="{DynamicResource ButtonStyleReceptionPage}" Content="Сохранить" Click="SaveAppointment_Click"/>
         </StackPanel>
     </Grid>
 </Page>

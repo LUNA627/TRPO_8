@@ -23,10 +23,28 @@ namespace TRPO_8
             InitializeComponent();
             MainFrame.Navigate(new LoginPage());
         }
+        private bool _isDarkTheme = false;
 
         private void ChangeTheme_Click(object sender, RoutedEventArgs e)
         {
-            ThemeHelper.Toggle();
+            var resources = Application.Current.Resources.MergedDictionaries;
+
+            // Удаляем текущую тему
+            var currentTheme = resources.FirstOrDefault(d =>
+                d.Source?.OriginalString.Contains("DefaultColors.xaml") == true ||
+                d.Source?.OriginalString.Contains("DarkTheme.xaml") == true);
+            if (currentTheme != null)
+                resources.Remove(currentTheme);
+
+            // Переключаем
+            _isDarkTheme = !_isDarkTheme;
+            string themePath = _isDarkTheme
+                ? "/Styles/Colors/DarkTheme.xaml"
+                : "/Styles/Colors/DefaultColors.xaml";
+
+            resources.Add(new ResourceDictionary { Source = new Uri(themePath, UriKind.Relative) });
         }
+
+       
     }
 }

@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <SolidColorBrush x:Key="WindowBackground" Color="Black"/>
+    <!--<SolidColorBrush x:Key="WindowBackground" Color="Black"/>
     <SolidColorBrush x:Key="TextForeground" Color="White"/>
     <SolidColorBrush x:Key="ButtonBackground" Color="Black"/>
     <SolidColorBrush x:Key="ButtonTextForeground" Color="Black"/>
@@ -12,5 +12,37 @@
     <SolidColorBrush x:Key="TextBoxForeground" Color="#004578"/>
 
     <SolidColorBrush x:Key="DatePickerBackground" Color="Black"/>
-    <SolidColorBrush x:Key="DatePickerForeground" Color="#004578"/>
+    <SolidColorBrush x:Key="DatePickerForeground" Color="#004578"/>-->
+
+
+
+    <!-- Фон окна -->
+    <SolidColorBrush x:Key="MaterialDesignBackground" Color="#1E2A32"/>
+    <SolidColorBrush x:Key="MaterialDesignPaper" Color="#1E2A32"/>
+
+    <!-- Карточки и панели -->
+    <SolidColorBrush x:Key="MaterialDesignCardBackground" Color="#2A3C46"/>
+
+    <!-- Текст -->
+    <SolidColorBrush x:Key="MaterialDesignHeadline" Color="#D6F4FF"/>
+    <SolidColorBrush x:Key="MaterialDesignBody" Color="#E4E8EB"/>
+    <SolidColorBrush x:Key="MaterialDesignHintText" Color="#A1B4BF"/>
+    <SolidColorBrush x:Key="MaterialDesignSecondaryText" Color="#A1B4BF"/>
+
+    <!-- Кнопки -->
+    <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#33B8B1"/>
+    <SolidColorBrush x:Key="SecondaryHueMidBrush" Color="#E65A4F"/>
+
+
+    <!-- Поля ввода -->
+    <SolidColorBrush x:Key="MaterialDesignTextFieldBoxBackground" Color="#324650"/>
+    <SolidColorBrush x:Key="MaterialDesignDivider" Color="#3C4D55"/>
+
+    <!-- Ошибки валидации -->
+    <SolidColorBrush x:Key="ValidationErrorBackground" Color="#3B1E1E"/>
+    <SolidColorBrush x:Key="ValidationErrorBorder" Color="#FFB3B3"/>
+    <SolidColorBrush x:Key="ValidationErrorForeground" Color="#FFB3B3"/>
+
+    <!-- Акцент -->
+    <SolidColorBrush x:Key="AccentColor" Color="#4FC3C7"/>
 </ResourceDictionary>

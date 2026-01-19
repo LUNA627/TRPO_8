@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:validators="clr-namespace:TRPO_8.Validation"
       xmlns:local="clr-namespace:TRPO_8.Pages"
-      Background="{DynamicResource WindowBackground}"
+      Background="{DynamicResource MaterialDesignBackground}"
       mc:Ignorable="d" 
       d:DesignHeight="650" d:DesignWidth="1100"
       Title="ChangePatientPage">
@@ -13,7 +13,7 @@
     <Grid>
  
         <StackPanel Style="{DynamicResource StackPanelStyle}">
-            <Label Content="Изменение информации пациента" Style="{DynamicResource LabelStyleTitul}"/>
+            <Label Content="Изменение информации пациента" Style="{StaticResource LabelStyleTitul}"/>
         </StackPanel>
 
  
@@ -36,9 +36,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-         
-            <Label Grid.Row="0" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Имя:" />
-            <TextBox Grid.Row="0" Grid.Column="1" Name="LastNameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+
+            <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelStyleChangePage}" Content="Имя:" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="LastNameTextBox" Style="{StaticResource RoundedTextBoxStyleChangePage}">
                 <TextBox.Text>
                     <Binding Path="Patient.LastNamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -58,8 +58,8 @@
             </ItemsControl>
 
 
-            <Label Grid.Row="2" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Фамилия:" />
-            <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+            <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyleChangePage}" Content="Фамилия:" />
+            <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Style="{StaticResource RoundedTextBoxStyleChangePage}">
                 <TextBox.Text>
                     <Binding Path="Patient.NamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -78,8 +78,8 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            <Label Grid.Row="4" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Отчество:" />
-            <TextBox Grid.Row="4" Grid.Column="1" Name="MiddleNameTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+            <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyleChangePage}" Content="Отчество:" />
+            <TextBox Grid.Row="4" Grid.Column="1" Name="MiddleNameTextBox" Style="{StaticResource RoundedTextBoxStyleChangePage}">
                 <TextBox.Text>
                     <Binding Path="Patient.MiddleNamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -98,7 +98,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            <Label Grid.Row="6" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Дата рождения:" />
+            <Label Grid.Row="6" Grid.Column="0" Style="{StaticResource LabelStyleChangePage}" Content="Дата рождения:" />
             <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyleLong}">
                 <DatePicker.SelectedDate>
                     <Binding Path="Patient.BirthdayPatient" UpdateSourceTrigger="PropertyChanged">
@@ -118,8 +118,8 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
 
-            <Label Grid.Row="8" Grid.Column="0" Style="{DynamicResource LabelStyleLoyLoySize}" Content="Номер телефона:"/>
-            <TextBox Grid.Row="8" Grid.Column="1" Name="PhoneTextBox" Style="{DynamicResource TextBoxStyleLoyLoySizeChangePage}">
+            <Label Grid.Row="8" Grid.Column="0" Style="{StaticResource LabelStyleChangePage}" Content="Номер телефона:"/>
+            <TextBox Grid.Row="8" Grid.Column="1" Name="PhoneTextBox" Style="{StaticResource RoundedTextBoxStyleChangePage}">
                 <TextBox.Text>
                     <Binding Path="Patient.PhonePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -140,8 +140,8 @@
 
 
             <StackPanel Grid.Row="10" Grid.Column="1" Style="{DynamicResource StackPanelOrientationHorizontalRight}">
-                <Button Style="{DynamicResource SaveButtonStyle}" Click="Save_Click"/>
-                <Button Style="{DynamicResource BackButtonStyle}" Click="GoBack_Click"/>
+                <Button Style="{StaticResource ButtonStyle}" Content="Изменить" Click="Save_Click"/>
+                <Button Style="{StaticResource ButtonStyle}" Content="Назад" Click="GoBack_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

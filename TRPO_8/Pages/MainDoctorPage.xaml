@@ -6,7 +6,7 @@
       xmlns:converters="clr-namespace:TRPO_8.Convertes"
       xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
-      Background="{DynamicResource WindowBackground}"
+      Background="{DynamicResource MaterialDesignBackground}"
       d:DesignHeight="450" d:DesignWidth="1000"
       Title="MainDoctorPage">
 
@@ -21,38 +21,38 @@
         </Grid.RowDefinitions>
 
         <StackPanel>
-            <Label Style="{DynamicResource LabelStyleTitul}" Content="Кабинет"/>
+            <Label Style="{StaticResource LabelStyleTitul}" Content="Кабинет"/>
         </StackPanel>
 
 
         <StackPanel Grid.Row="1" Style="{DynamicResource StackPanelOrientationHorizontalTop}">
             <StackPanel>
-                <Label Style="{DynamicResource LabelStyleLoySize}" Content="Идентификатор" />
-                <Label Style="{DynamicResource LabelStyleLoySize}" Content="Фамилия"/>
-                <Label Style="{DynamicResource LabelStyleLoySize}" Content="Имя"/>
-                <Label Style="{DynamicResource LabelStyleLoySize}" Content="Отчество"/>
-                <Label Style="{DynamicResource LabelStyleLoySize}" Content="Профессия"/>
+                <Label Style="{StaticResource LabelStyleMainPage}" Content="Идентификатор" />
+                <Label Style="{StaticResource LabelStyleMainPage}" Content="Фамилия"/>
+                <Label Style="{StaticResource LabelStyleMainPage}" Content="Имя"/>
+                <Label Style="{StaticResource LabelStyleMainPage}" Content="Отчество"/>
+                <Label Style="{StaticResource LabelStyleMainPage}" Content="Профессия"/>
             </StackPanel>
 
             <StackPanel>
-                <TextBox Text="{Binding CurrentDoctor.IDDoctor}" Style="{DynamicResource TextBoxStyleLoySize}"/>
-                <TextBox Text="{Binding CurrentDoctor.NameDoctor}" Style="{DynamicResource TextBoxStyleLoySize}"/>
-                <TextBox Text="{Binding CurrentDoctor.LastNameDoctor}" Style="{DynamicResource TextBoxStyleLoySize}"/>
-                <TextBox Text="{Binding CurrentDoctor.MiddleNameDoctor}" Style="{DynamicResource TextBoxStyleLoySize}"/>
-                <TextBox Text="{Binding CurrentDoctor.SpecialisationDoctor}" Style="{DynamicResource TextBoxStyleLoySize}"/>
+                <TextBox Text="{Binding CurrentDoctor.IDDoctor}" Style="{StaticResource RoundedTextBoxStyleMainPage}"/>
+                <TextBox Text="{Binding CurrentDoctor.NameDoctor}" Style="{StaticResource RoundedTextBoxStyleMainPage}"/>
+                <TextBox Text="{Binding CurrentDoctor.LastNameDoctor}" Style="{StaticResource RoundedTextBoxStyleMainPage}"/>
+                <TextBox Text="{Binding CurrentDoctor.MiddleNameDoctor}" Style="{StaticResource RoundedTextBoxStyleMainPage}"/>
+                <TextBox Text="{Binding CurrentDoctor.SpecialisationDoctor}" Style="{StaticResource RoundedTextBoxStyleMainPage}"/>
             </StackPanel>
         </StackPanel>
 
 
      
         <StackPanel Grid.Row="0" Grid.Column="1"  Style="{DynamicResource StackPanelOrientationHorizontal}">
-            <Button Style="{StaticResource AddButtonStyle}" Click="CreatNewPatint_Click"/>
-            <Button Style="{StaticResource LoginButtonStartReceivingStyle}" Click="StartAppointment_Click"/>
-            <Button Style="{StaticResource LoginButtonСhangeInfoStyle}" Click="ChangeInfo_Click"/>
-            <Button Style="{StaticResource DeleteButtonStyle}" Click="DeleteInfo_Click"/>
+            <Button Style="{StaticResource ButtonStyleMainPage}" Content="Добавить" Click="CreatNewPatint_Click"/>
+            <Button Style="{StaticResource ButtonStyleMainPage}" Content="Начать приём" Click="StartAppointment_Click"/>
+            <Button Style="{StaticResource ButtonStyleMainPage}" Content="Изменить" Click="ChangeInfo_Click"/>
+            <Button Style="{StaticResource ButtonStyleMainPage}" Content="Удалить" Click="DeleteInfo_Click"/>
         </StackPanel>
 
-        <ListView Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Patients}" SelectedItem="{Binding PatientSelected, Mode=TwoWay}" >
+        <ListView Grid.Row="1" Grid.Column="1"  ItemsSource="{Binding Patients}" SelectedItem="{Binding PatientSelected, Mode=TwoWay}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

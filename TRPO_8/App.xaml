@@ -7,27 +7,35 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+  
+            
+            
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Menu.xaml" />
+                
                 <ResourceDictionary Source="/Styles/Colors/DefaultColors.xaml"/>
+                <ResourceDictionary Source="/Styles/Colors/DarkTheme.xaml"/>
+                <ResourceDictionary Source="/Styles/Colors/DefaultColors.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialTextBlockStyle.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/Button.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/Label.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/TextBox.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/StackPanel.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/Grid.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/DatePicker.xaml"/>
-
-                <materialDesign:BundledTheme 
-                    BaseTheme="Light"
-                    PrimaryColor="DeepPurple" 
-                    SecondaryColor="Lime" />
-
-                <ResourceDictionary
-                Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml" />
+                <ResourceDictionary Source="/Styles/UI/MaterialButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialLabelStyle.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialTextBoxStyle.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialListStyle.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialMenuItemStyle.xaml"/>
 
             </ResourceDictionary.MergedDictionaries>
 
             <converters:AgeConverter x:Key="AgeConverter"/>
             <converters:AdultStatusConverter x:Key="AdultStatusConverter"/>
+            <converters:DayAppointmentConverter x:Key="DayAppointmentConverter"/>
         </ResourceDictionary>
 
     </Application.Resources>

@@ -94,7 +94,18 @@ namespace TRPO_8.Classs
             }
         }
 
+        private DateTime? _lastAppointmentDate;
 
+        public DateTime? LastAppointmentDate
+        {
+            get
+            {
+                if (AppointmentStories == null || !AppointmentStories.Any())
+                    return null;
+
+                return AppointmentStories.OrderByDescending(a => a.DateAppointment).FirstOrDefault()?.DateAppointment;
+            }
+        }
 
 
         private string _phonePatient = "";
@@ -120,11 +131,21 @@ namespace TRPO_8.Classs
             set
             {
                 _appointmentStories = value;
+
+
+                _appointmentStories = value ?? new ObservableCollection<Appointment>();
+                _appointmentStories.CollectionChanged += OnAppointmentStoriesChanged;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(LastAppointmentDate));
             }
         }
 
-     
+        private void OnAppointmentStoriesChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            OnPropertyChanged(nameof(LastAppointmentDate));
+        }
+
+
         public string FullName => $"{NamePatient} {LastNamePatient} {MiddleNamePatient}".Trim();
 
 

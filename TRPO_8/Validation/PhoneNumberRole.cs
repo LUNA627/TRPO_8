@@ -21,12 +21,12 @@ namespace TRPO_8.Validation
                 return new ValidationResult(false, "Введите корректный номер телефона");
             }
 
-            if (digitOnly.Length < 10 || digitOnly.Length > 11)
+            if (digitOnly.Length > 11)
             {
-                return new ValidationResult(false, "Номер должен содержать 10 или 11 цифр");
+                return new ValidationResult(false, "Номер должен содержать 11 цифр");
             }
 
-            if (digitOnly.Length == 11 && digitOnly[0] != '8' && digitOnly[0] != '7')
+            if (digitOnly.Length != 11 && digitOnly[0] != '8' && digitOnly[0] != '7')
             {
                 return new ValidationResult(false, "Номер должен начинаться с 8 или 7");
             }

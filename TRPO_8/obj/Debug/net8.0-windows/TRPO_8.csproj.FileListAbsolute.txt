@@ -215,3 +215,15 @@ C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\Microsoft.X
 C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.AssemblyReference.cache
 C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_Content.g.cs
 C:\Users\LUNA\Desktop\TRPO_10\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.Up2Date
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.AssemblyReference.cache
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8_Content.g.cs
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\TRPO_8.csproj.Up2Date
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialButtonStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialLabelStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialTextBoxStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialListStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialTextBlockStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialMenuItemStyle.baml

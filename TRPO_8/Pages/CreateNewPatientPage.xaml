@@ -6,7 +6,7 @@
       xmlns:validators="clr-namespace:TRPO_8.Validation"
       xmlns:local="clr-namespace:TRPO_8.Pages"
       mc:Ignorable="d" 
-      Background="{DynamicResource WindowBackground}"
+      Background="{DynamicResource MaterialDesignBackground}"
       d:DesignHeight="650" d:DesignWidth="1000"
       Title="CreateNewPatientPage">
 
@@ -38,8 +38,8 @@
             </Grid.RowDefinitions>
 
             <!-- Фамилия -->
-            <Label Grid.Row="0" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="Фамилия" />
-            <TextBox Grid.Row="0" Grid.Column="1" Name="LastNameTextBox" Style="{DynamicResource TextBoxStyle}">
+            <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelStyle}" Content="Фамилия" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="LastNameTextBox" Style="{StaticResource RoundedTextBoxStyleCreatePage}">
                 <TextBox.Text>
                     <Binding Path="LastNamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -59,8 +59,8 @@
             </ItemsControl>
 
             <!-- Имя -->
-            <Label Grid.Row="2" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="Имя"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Style="{DynamicResource TextBoxStyle}" >
+            <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}" Content="Имя"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Style="{StaticResource RoundedTextBoxStyleCreatePage}" >
                 <TextBox.Text>
                     <Binding Path="NamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -80,8 +80,8 @@
             </ItemsControl>
 
             <!-- Отчество -->
-            <Label Grid.Row="4" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="Отчество"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Name="MiddleNameTextBox" Style="{DynamicResource TextBoxStyle}" >
+            <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}" Content="Отчество"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Name="MiddleNameTextBox" Style="{StaticResource RoundedTextBoxStyleCreatePage}" >
                 <TextBox.Text>
                     <Binding Path="MiddleNamePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
@@ -101,7 +101,7 @@
             </ItemsControl>
 
             <!-- День рождения -->
-            <Label Grid.Row="6" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="День рождения" />
+            <Label Grid.Row="6" Grid.Column="0" Style="{StaticResource LabelStyle}" Content="День рождения" />
             <DatePicker Grid.Row="6" Grid.Column="1" Name="BirthdayTextBox" Style="{DynamicResource DatePickerStyleLoy}" SelectedDate="{Binding BirthdayPatient}">
                 <DatePicker.Text>
                     <Binding Path="BirthdayPatient" UpdateSourceTrigger="PropertyChanged">
@@ -122,12 +122,13 @@
             </ItemsControl>
 
             <!-- Телефон -->
-            <Label Grid.Row="8" Grid.Column="0" Style="{DynamicResource LabelStyle}" Content="Контактный телефон" />
-            <TextBox Grid.Row="8" Grid.Column="1" Name="PhoneTextBox" Style="{DynamicResource TextBoxStyle}" >
+            <Label Grid.Row="8" Grid.Column="0" Style="{StaticResource LabelStyle}" Content="Контактный телефон" />
+            <TextBox Grid.Row="8" Grid.Column="1" Name="PhoneTextBox" Style="{StaticResource RoundedTextBoxStyleCreatePage}" >
                 <TextBox.Text>
                     <Binding Path="PhonePatient" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <validators:IsEmptyRule/>
+                            <validators:PhoneNumberRole/>
                         </Binding.ValidationRules>
                     </Binding>
                 </TextBox.Text>
@@ -143,8 +144,8 @@
 
             <!-- Кнопки -->
             <StackPanel Grid.Row="10" Grid.Column="1" Style="{DynamicResource StackPanelOrientationHorizontalRight}" >
-                <Button Style="{DynamicResource SaveButtonStyle}" Click="SaveNewPatint_Click" />
-                <Button Style="{DynamicResource BackButtonStyle}" Click="GoBack_Click"/>
+                <Button Style="{StaticResource ButtonStyle}" Content="Добавить" Click="SaveNewPatint_Click" />
+                <Button Style="{StaticResource ButtonStyle}" Content="Назад" Click="GoBack_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

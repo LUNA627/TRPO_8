@@ -52,5 +52,7 @@ namespace TRPO_8.Pages
         {
             NavigationService.Navigate(new RegistrationPage());
         }
+
+        
     }
 }

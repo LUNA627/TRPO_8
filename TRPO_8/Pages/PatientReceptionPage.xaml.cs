@@ -33,6 +33,7 @@ namespace TRPO_8.Pages
             Patient = patient;
             CurrentDoctorId = doctorId;
             CurrentAppointment.DoctorId = doctorId;
+
             DataContext = this;
         }
 
@@ -76,7 +77,7 @@ namespace TRPO_8.Pages
 
             var newAppointment = new Appointment
             {
-                Date = DateTime.Today.ToString("dd.MM.yyyy"),
+                DateAppointment = DateTime.Today,
                 DoctorId = CurrentDoctorId,
                 Diagnosis = CurrentAppointment.Diagnosis,
                 Recomendations = CurrentAppointment.Recomendations

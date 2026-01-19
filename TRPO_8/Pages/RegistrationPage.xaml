@@ -6,12 +6,12 @@
       xmlns:local="clr-namespace:TRPO_8.Pages"
       xmlns:validators="clr-namespace:TRPO_8.Validation"
       mc:Ignorable="d"
-      Background="{DynamicResource WindowBackground}"
+      Background="{DynamicResource MaterialDesignBackground}"
       d:DesignHeight="650" d:DesignWidth="1100"
       Title="RegistrationPage">
     <Grid>
         <StackPanel Style="{DynamicResource StackPanelStyle}">
-            <Label Style="{DynamicResource LabelStyleTitul}" Content="Регистрация"/>
+            <Label Style="{StaticResource LabelStyleTitul}" Content="Регистрация"/>
         </StackPanel>
 
         <Grid Style="{DynamicResource GridStyle}">
@@ -53,7 +53,7 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Name="LastNameTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="0" Name="LastNameTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_LastName" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -72,7 +72,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <TextBox Grid.Row="2" Name="NameTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="2" Name="NameTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_Name" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -91,7 +91,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <TextBox Grid.Row="4" Name="MiddleNameTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="4" Name="MiddleNameTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_MiddleName" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -110,7 +110,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <TextBox Grid.Row="6" Name="SpecialisationTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="6" Name="SpecialisationTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_Specialisation" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -129,7 +129,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <TextBox Grid.Row="8" Name="PasswordTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="8" Name="PasswordTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_Password" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -148,7 +148,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <TextBox Grid.Row="10" Name="RepeatPasswordTextBox" Style="{DynamicResource TextBoxStyle}">
+                <TextBox Grid.Row="10" Name="RepeatPasswordTextBox" Style="{StaticResource RoundedTextBoxStyle}">
                     <TextBox.Text>
                         <Binding Path="_RepeatPassword" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -168,8 +168,8 @@
 
                 <StackPanel Grid.Row="12" Grid.ColumnSpan="2" 
                         Style="{DynamicResource StackPanelOrientationHorizontalRight}">
-                    <Button Style="{DynamicResource SaveButtonStyle}" Click="SaveNewDoctor_Click"/>
-                    <Button Style="{DynamicResource BackButtonStyle}" Click="BackButton_Click"/>
+                    <Button Style="{StaticResource ButtonStyle}" Content="Зарегистрировать" Click="SaveNewDoctor_Click"/>
+                    <Button Style="{StaticResource ButtonStyle}" Content="Назад" Click="BackButton_Click"/>
                 </StackPanel>
             </Grid>
         </Grid>
