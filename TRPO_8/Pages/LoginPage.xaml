@@ -32,7 +32,7 @@
                         </Binding>
                     </TextBox.Text>
                 </TextBox>
-                <ItemsControl Foreground="Red"
+                <ItemsControl Foreground="{StaticResource ValidationErrorForeground}"
                               FontSize="12" 
                               ItemsSource="{Binding ElementName=IdTextBox, Path=(Validation.Errors)}">
                     <ItemsControl.ItemTemplate>
@@ -53,7 +53,7 @@
                         </Binding>
                     </TextBox.Text>
                 </TextBox>
-                <ItemsControl Foreground="Red"
+                <ItemsControl Foreground="{StaticResource ValidationErrorForeground}"
               FontSize="12" 
               ItemsSource="{Binding ElementName=PasswordTextBox, Path=(Validation.Errors)}">
                     <ItemsControl.ItemTemplate>

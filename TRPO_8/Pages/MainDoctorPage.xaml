@@ -52,7 +52,7 @@
             <Button Style="{StaticResource ButtonStyleMainPage}" Content="Удалить" Click="DeleteInfo_Click"/>
         </StackPanel>
 
-        <ListView Grid.Row="1" Grid.Column="1"  ItemsSource="{Binding Patients}" SelectedItem="{Binding PatientSelected, Mode=TwoWay}" >
+        <ListView Grid.Row="1" Grid.Column="1" Style="{StaticResource ModernListViewStyle}"  ItemsSource="{Binding Patients}" SelectedItem="{Binding PatientSelected, Mode=TwoWay}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

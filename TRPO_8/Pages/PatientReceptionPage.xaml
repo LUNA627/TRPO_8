@@ -36,10 +36,14 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <ListView Grid.Row="1" Grid.RowSpan="3" ItemsSource="{Binding Patient.AppointmentStories}" >
+        <ListView Grid.Row="1" Grid.RowSpan="3" Style="{StaticResource ModernListViewStyle}"  ItemsSource="{Binding Patient.AppointmentStories}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Последний прием: "/>
+                            <TextBlock Text="{Binding Date}"/>
+                        </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Последний доктор: "/>
                             <TextBlock Text="{Binding DoctorId}"/>
@@ -73,8 +77,7 @@
             <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.MiddleNamePatient}"/>
             <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.BirthdayPatient, StringFormat={}{0:dd.MM.yyyy}}"/>
             <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}" Text="{Binding Patient.PhonePatient}"/>
-            <TextBlock Style="{StaticResource TextBlockStyleReceptionPage}" Text="{Binding Patient.AppointmentStories, Converter={StaticResource DayAppointmentConverter}}"/>
-
+            <TextBox Style="{DynamicResource RoundedTextBoxStyleReceptionPage}"  Text="{Binding Patient.DaysSinceLastAppointment,Mode=OneWay, Converter={StaticResource DayAppointmentConverter}}"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="0, 40,0,0">
@@ -91,7 +94,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                ItemsSource="{Binding ElementName=DiagnosisTextBox, Path=(Validation.Errors)}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -108,7 +111,7 @@
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox>
-            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                    ItemsSource="{Binding ElementName=DiagnosisTextBox, Path=(Validation.Errors)}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

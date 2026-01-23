@@ -15,7 +15,7 @@
 
         <Menu Grid.Row="0">
             <MenuItem Header="Настройки">
-                <MenuItem Header="Сменить тему" Click="ChangeTheme_Click" Style="{StaticResource MaterialMenuItemStyle}"/>
+                <MenuItem Header="Сменить тему" Click="ChangeTheme_Click" />
             </MenuItem>
         </Menu>
         

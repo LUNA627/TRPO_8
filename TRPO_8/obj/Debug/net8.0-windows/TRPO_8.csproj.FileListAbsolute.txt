@@ -227,3 +227,4 @@ C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\Materi
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialListStyle.baml
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialTextBlockStyle.baml
 C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialMenuItemStyle.baml
+C:\Users\LUNA0_0\Desktop\TRPO_8\TRPO_8\obj\Debug\net8.0-windows\Styles\UI\MaterialDataPickerStyle.baml

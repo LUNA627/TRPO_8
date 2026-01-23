@@ -21,12 +21,12 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0">
-                <Label Style="{DynamicResource LabelStyle}" Content="Фамилия"/>
-                <Label Style="{DynamicResource LabelStyle}" Content="Имя"/>
-                <Label Style="{DynamicResource LabelStyle}" Content="Отчество"/>
-                <Label Style="{DynamicResource LabelStyle}" Content="Профессия"/>
-                <Label Style="{DynamicResource LabelStyle}" Content="Пароль"/>
-                <Label Style="{DynamicResource LabelStyle}" Content="Подтверждение пароля"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Фамилия"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Имя"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Отчество"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Профессия"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Пароль"/>
+                <Label Style="{DynamicResource LabelStyleRegistrationPage}" Content="Подтверждение пароля"/>
             </StackPanel>
 
             <Grid Grid.Column="1">

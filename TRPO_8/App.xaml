@@ -30,6 +30,7 @@
                 <ResourceDictionary Source="/Styles/UI/MaterialTextBoxStyle.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/MaterialListStyle.xaml"/>
                 <ResourceDictionary Source="/Styles/UI/MaterialMenuItemStyle.xaml"/>
+                <ResourceDictionary Source="/Styles/UI/MaterialDataPickerStyle.xaml"/>
 
             </ResourceDictionary.MergedDictionaries>
 

@@ -94,19 +94,7 @@ namespace TRPO_8.Classs
             }
         }
 
-        private DateTime? _lastAppointmentDate;
-
-        public DateTime? LastAppointmentDate
-        {
-            get
-            {
-                if (AppointmentStories == null || !AppointmentStories.Any())
-                    return null;
-
-                return AppointmentStories.OrderByDescending(a => a.DateAppointment).FirstOrDefault()?.DateAppointment;
-            }
-        }
-
+        
 
         private string _phonePatient = "";
         public string PhonePatient
@@ -120,8 +108,19 @@ namespace TRPO_8.Classs
         }
 
 
-    
 
+
+        public int DaysSinceLastAppointment
+        {
+            get
+            {
+                if (AppointmentStories == null || !AppointmentStories.Any())
+                    return -1; // Первый приём
+
+                var lastAppointment = AppointmentStories.OrderByDescending(a => a.DaysSinceAppointment).FirstOrDefault();
+                return lastAppointment?.DaysSinceAppointment ?? -1;
+            }
+        }
 
 
         private ObservableCollection<Appointment> _appointmentStories = new();
@@ -131,20 +130,17 @@ namespace TRPO_8.Classs
             set
             {
                 _appointmentStories = value;
-
-
-                _appointmentStories = value ?? new ObservableCollection<Appointment>();
-                _appointmentStories.CollectionChanged += OnAppointmentStoriesChanged;
                 OnPropertyChanged();
-                OnPropertyChanged(nameof(LastAppointmentDate));
             }
         }
 
-        private void OnAppointmentStoriesChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        public Patient()
         {
-            OnPropertyChanged(nameof(LastAppointmentDate));
+            AppointmentStories = new ObservableCollection<Appointment>();
         }
 
+
+      
 
         public string FullName => $"{NamePatient} {LastNamePatient} {MiddleNamePatient}".Trim();
 

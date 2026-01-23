@@ -49,7 +49,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="1" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                           ItemsSource="{Binding ElementName=LastNameTextBox, Path=(Validation.Errors)}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -70,7 +70,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl Grid.Row="3" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="3" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                           ItemsSource="{Binding ElementName=NameTextBox, Path=(Validation.Errors)}" >
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -91,7 +91,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl Grid.Row="5" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="5" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                           ItemsSource="{Binding ElementName=MiddleNameTextBox, Path=(Validation.Errors)}" >
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -112,7 +112,7 @@
                     </Binding>
                 </DatePicker.Text>
             </DatePicker>
-            <ItemsControl Grid.Row="7" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="7" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                           ItemsSource="{Binding ElementName=BirthdayTextBox, Path=(Validation.Errors)}" >
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
@@ -133,7 +133,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            <ItemsControl Grid.Row="9" Grid.Column="1" Foreground="Red" FontSize="12"
+            <ItemsControl Grid.Row="9" Grid.Column="1" Foreground="{StaticResource ValidationErrorForeground}" FontSize="12"
                           ItemsSource="{Binding ElementName=PhoneTextBox, Path=(Validation.Errors)}" >
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

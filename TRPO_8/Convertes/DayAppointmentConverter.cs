@@ -14,23 +14,13 @@ namespace TRPO_8.Convertes
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is ObservableCollection<Appointment> appointments && appointments != null)
+            if (value is int days)
             {
-                if (!appointments.Any())
-                    return "Первый приём";
-
-                var lastAppointment = appointments.OrderByDescending(a => a.DateAppointment).FirstOrDefault();
-
-                // Проверка на DateTime.MinValue
-                if (lastAppointment?.DateAppointment == DateTime.MinValue)
-                    return "Некорректная дата";
-
-                var today = DateTime.Today;
-                var days = (today - lastAppointment.DateAppointment.Date).Days;
-
+                if (days == -1) return "Первый приём";
+                if (days == 0) return "Сегодня";
+                if (days == 1) return "Вчера";
                 return $"{days} дней";
             }
-
             return "Первый приём";
         }
 
@@ -39,4 +29,5 @@ namespace TRPO_8.Convertes
             throw new NotImplementedException();
         }
     }
+      
 }

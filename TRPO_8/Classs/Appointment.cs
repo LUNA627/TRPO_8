@@ -11,11 +11,22 @@ namespace TRPO_8.Classs
     public class Appointment : INotifyPropertyChanged
     {
 
-        private DateTime _dateAppointment;
-        public DateTime DateAppointment
+        private string _date = DateTime.Today.ToString("dd.MM.yyyy");
+        public string Date
         {
-            get => _dateAppointment;
-            set { _dateAppointment = value; OnPropertyChanged(); }
+            get => _date;
+            set { _date = value; OnPropertyChanged(); }
+        }
+
+        public int DaysSinceAppointment
+        {
+            get
+            {
+                if (DateTime.TryParseExact(Date, "dd.MM.yyyy", null, System.Globalization.DateTimeStyles.None, out var date))
+                    return (DateTime.Today - date).Days;
+
+                return -1; 
+            }
         }
         public int DoctorId { get; set; } = 0;
         public string Diagnosis { get; set; } = "";

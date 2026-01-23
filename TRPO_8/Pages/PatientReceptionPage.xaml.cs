@@ -77,7 +77,7 @@ namespace TRPO_8.Pages
 
             var newAppointment = new Appointment
             {
-                DateAppointment = DateTime.Today,
+                Date = DateTime.Today.ToString("dd.MM.yyyy"),
                 DoctorId = CurrentDoctorId,
                 Diagnosis = CurrentAppointment.Diagnosis,
                 Recomendations = CurrentAppointment.Recomendations
@@ -93,5 +93,7 @@ namespace TRPO_8.Pages
 
             MessageBox.Show("Приём сохранён!", "Успех");
         }
+
+     
     }
 }
